@@ -1,42 +1,56 @@
-name: Daily Data Scrape
+name: Daily Data Scrape and Process
 
 on:
-  workflow_dispatch: # Allows manual triggering
+  workflow_dispatch: # Allows manual triggering from the Actions tab
   schedule:
-    - cron: '0 5 * * *' # Runs every day at 5 AM UTC
+    - cron: '0 8 * * 1-5' # Runs at 8 AM UTC every weekday (Mon-Fri)
 
 jobs:
-  scrape:
+  scrape-and-process:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out this repo
+      - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: Set up Python
+      - name: Set up Python 3.9
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Install Google Chrome
+      - name: Install Google Chrome Stable
         run: |
+          wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
 
-      - name: Run the Scraper and Processor
+      - name: Modify scraper.py to run headless
+        run: |
+          # This command finds the line with `options.add_argument("start-maximized")`
+          # and inserts the headless and window-size arguments after it.
+          # This is crucial for running in a non-GUI environment.
+          sed -i '/options.add_argument("start-maximized")/a \    options.add_argument("--headless")\n    options.add_argument("--window-size=1920,1080")' scraper.py
+
+      - name: Run Scraper and Processor
         run: |
           python scraper.py
           python data_processor.py
       
-      - name: Commit and push if it changed
+      - name: Commit and push data files
         run: |
           git config --global user.name "GitHub Actions Bot"
-          git config --global user.email "actions@github.com"
-          git add raw_job_data.csv processed_job_data.csv
-          git commit -m "Update data" || exit 0
-          git push
+          git config --global user.email "github-actions-bot@github.com"
+          git add -f raw_job_data.csv processed_job_data.csv # Use -f to force add if ignored
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update: Daily job data refresh"
+            git push
+          fi
