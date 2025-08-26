@@ -1,0 +1,206 @@
+title,company,location,link,description
+"Lead Data Scientist, Decision Sciences",NBCUniversal,"New York, NY 10112 (Midtown area)",https://www.indeed.com/rc/clk?jk=461b4b826044c18e&bb=61CN2pTWBE7fh6ZtDvGZtg5mEayl-VxnPzZRVnvCj_xl0QqhGuJITt2VDBlIyJ3hPl0o_K3X71jz3c2yLCxw9SOzPSTmX44Z4FohuK8ccxqlHMUseNyOj4qo6jVwp6bHzFIVjhjfO1wwcxhVFTO0hw%3D%3D&xkcb=SoDc67M3uz6MOOxWHp0JbzkdCdPP&fccid=35d653c09c2712b6&vjs=3,"Company Description
+
+NBCUniversal is one of the world's leading media and entertainment companies. We create world-class content, which we distribute across our portfolio of film, television, and streaming, and bring to life through our theme parks and consumer experiences. We own and operate leading entertainment and news brands, including NBC, NBC News, MSNBC, CNBC, NBC Sports, Telemundo, NBC Local Stations, Bravo, USA Network, and Peacock, our premium ad-supported streaming service. We produce and distribute premier filmed entertainment and programming through Universal Filmed Entertainment Group and Universal Studio Group, and have world-renowned theme parks and attractions through Universal Destinations & Experiences. NBCUniversal is a subsidiary of Comcast Corporation.
+Our impact is rooted in improving the communities where our employees, customers, and audiences live and work. We have a rich tradition of giving back and ensuring our employees have the opportunity to serve their communities. We champion an inclusive culture and strive to attract and develop a talented workforce to create and deliver a wide range of content reflecting our world.
+Comcast NBCUniversal has announced its intent to create a new publicly traded company ('Versant') comprised of most of NBCUniversal's cable television networks, including USA Network, CNBC, MSNBC, Oxygen, E!, SYFY and Golf Channel along with complementary digital assets Fandango, Rotten Tomatoes, GolfNow, GolfPass, and SportsEngine. The well-capitalized company will have significant scale as a pure-play set of assets anchored by leading news, sports and entertainment content. The spin-off is expected to be completed during 2025.
+
+Job Description
+
+As part of the Media Group Decision Sciences team, the Lead Data Scientist will be responsible for creating analytical solutions for one or more verticals of NBCU’s video streaming service including, but not limited to, the recommender system, automated marketing, personalized advertisement, commerce and revenue optimization systems, customer journey and CRM solutions. In this role, the Lead Data Scientist will use advanced data science methodologies including causal discovery analysis, reinforcement learning, machine learning models, Bayesian analysis etc. and work closely with business owners, teammates and engineers to build a state-of-the-art real-time video streaming service.
+Responsibilities include, but are not limited to:
+Lead development of analytical models using statistical, machine learning and data mining methodologies. Advise, help to resolve issues and handle non-standard cases.
+Define procedures for cleansing, discretization, imputation, selection, generalization etc. to create high quality features for the modeling process.
+Effectively communicate with team members, project partners and business stakeholders on goals, procedures, timelines and expectations.
+Proactively anticipate/identify upcoming issues and take initiatives to provide solutions
+Use big data, relational and non-relational data sources to access data at the appropriate level of granularity for the needs of specific analytical projects. Maintain up to date knowledge of the relevant data set structures and participate in defining necessary upgrades and modifications.
+Collaborate with software and data architects in building real-time and automated batch implementations of the data science solutions and integrating them into the streaming service architecture.
+Drive work on improving the codebase and machine learning lifecycle infrastructure
+
+Qualifications
+Advanced (Master or PhD) degree with specialization in Statistics, Computer Science, Data Science, Economics, Mathematics, Operations Research or another quantitative field or equivalent.
+5+ years of experience in statistical methods and machine learning within industry and research.
+Understanding of algorithmic complexity of model training and testing, particularly for real-time and near real-time models.
+Has strong knowledge of causal inference techniques, Gen AI (LLM) implementation, or reinforcement learning.
+Solid technical knowledge of A/B testing methodologies, experimental design, statistics and other analytical concepts.
+Experience implementing scalable, distributed, and highly available systems using Google Cloud.
+Proficient in Python and SQL
+Desired Characteristics:
+Knowledge of enterprise-level digital analytics platforms (e.g. Adobe Analytics, Google Analytics,
+Experience on implementing and owning end-to-end data projects with a diverse group of stakeholders
+Experience with television ratings and digital measurement tools (Nielsen, Rentrak, ComScore etc.)
+Strong sense of curiosity, accountability, and ability to execute projects of all sizes with clear vision and purpose.
+Enthusiastic about video, TV, and streaming content
+Hybrid: This position has been designated as hybrid, generally contributing from the office a minimum of three days per week.
+This position is eligible for company sponsored benefits, including medical, dental and vision insurance, 401(k), paid leave, tuition reimbursement, and a variety of other discounts and perks. Learn more about the benefits offered by NBCUniversal by visiting the Benefits page of the Careers website. Salary range: $145,000-$175,000, bonus and LTI eligible
+
+Additional Information
+
+As part of our selection process, external candidates may be required to attend an in-person interview with an NBCUniversal employee at one of our locations prior to a hiring decision. NBCUniversal's policy is to provide equal employment opportunities to all applicants and employees without regard to race, color, religion, creed, gender, gender identity or expression, age, national origin or ancestry, citizenship, disability, sexual orientation, marital status, pregnancy, veteran status, membership in the uniformed services, genetic information, or any other basis protected by applicable law.
+If you are a qualified individual with a disability or a disabled veteran and require support throughout the application and/or recruitment process as a result of your disability, you have the right to request a reasonable accommodation. You can submit your request to AccessibilitySupport@nbcuni.com."
+"Data Scientist, Amazon Advertising",Amazon.com Services LLC,"New York, NY",https://www.indeed.com/rc/clk?jk=d07d040f6df91929&bb=61CN2pTWBE7fh6ZtDvGZttcHFha_sJ5n_oCxaUbN7TFR2zYBvBB6B3kKWhu0h9_43TIRBg91qNzBSFO4v0a5A00gw7izIpBAthfwabf3L0pz-p40NZgNCPs3oiGKhsiOmmMCbjxhNKKzL2e6jdEa0A%3D%3D&xkcb=SoBo67M3uz6MOOxWHp0IbzkdCdPP&fccid=fe2d21eef233e94a&vjs=3,"DESCRIPTION
+Amazon Advertising is one of Amazon's fastest growing and most profitable businesses, responsible for defining and delivering a collection of advertising products that drive discovery and sales. Our products and solutions are strategically important to enable our Retail and Marketplace businesses to drive long-term growth. We deliver billions of ad impressions and millions of clicks and break fresh ground in product and technical innovations every day!
+
+As a Data Scientist on this team you will:
+Lead Data Science solutions from beginning to end.
+Deliver with independence on challenging large-scale problems with complexity and ambiguity.
+Write code (Python, R, Scala, SQL, etc.) to obtain, manipulate, and analyze data.
+Build Machine Learning and statistical models to solve specific business problems.
+Retrieve, synthesize, and present critical data in a format that is immediately useful to answering specific questions or improving system performance.
+Analyze historical data to identify trends and support optimal decision making.
+Apply statistical and machine learning knowledge to specific business problems and data.
+Formalize assumptions about how our systems should work, create statistical definitions of outliers, and develop methods to systematically identify outliers. Work out why such examples are outliers and define if any actions needed.
+Given anecdotes about anomalies or generate automatic scripts to define anomalies, deep dive to explain why they happen, and identify fixes.
+Build decision-making models and propose effective solutions for the business problems you define.
+Conduct written and verbal presentations to share insights to audiences of varying levels of technical sophistication.
+
+Why you will love this opportunity: Amazon has invested heavily in building a world-class advertising business. This team defines and delivers a collection of advertising products that drive discovery and sales. Our solutions generate billions in revenue and drive long-term growth for Amazon’s Retail and Marketplace businesses. We deliver billions of ad impressions, millions of clicks daily, and break fresh ground to create world-class products. We are a highly motivated, collaborative, and fun-loving team with an entrepreneurial spirit - with a broad mandate to experiment and innovate.
+
+Impact and Career Growth: You will invent new experiences and influence customer-facing shopping experiences to help suppliers grow their retail business and the auction dynamics that leverage native advertising; this is your opportunity to work within the fastest-growing businesses across all of Amazon! Define a long-term science vision for our advertising business, driven from our customers' needs, translating that direction into specific plans for research and applied scientists, as well as engineering and product teams. This role combines science leadership, organizational ability, technical strength, product focus, and business understanding.
+
+Team video ~ https://youtu.be/zD_6Lzw8raE
+
+BASIC QUALIFICATIONS
+3+ years of data querying languages (e.g. SQL), scripting languages (e.g. Python) or statistical/mathematical software (e.g. R, SAS, Matlab, etc.) experience
+2+ years of data scientist experience
+3+ years of machine learning/statistical modeling data analysis tools and techniques, and parameters that affect their performance experience
+Bachelor's degree
+Experience applying theoretical models in an applied environment
+PREFERRED QUALIFICATIONS
+Experience in Python, Perl, or another scripting language
+Experience in a ML or data scientist role with a large technology company
+
+Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.
+
+Los Angeles County applicants: Job duties for this position include: work safely and cooperatively with other employees, supervisors, and staff; adhere to standards of excellence despite stressful conditions; communicate effectively and respectfully with employees, supervisors, and staff to ensure exceptional customer service; and follow all federal, state, and local laws and Company policies. Criminal history may have a direct, adverse, and negative relationship with some of the material job duties of this position. These include the duties and responsibilities listed above, as well as the abilities to adhere to company policies, exercise sound judgment, effectively manage stress and work safely and respectfully with others, exhibit trustworthiness and professionalism, and safeguard business operations and the Company’s reputation. Pursuant to the Los Angeles County Fair Chance Ordinance, we will consider for employment qualified applicants with arrest and conviction records.
+
+Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit https://amazon.jobs/content/en/how-we-hire/accommodations for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.
+
+Our compensation reflects the cost of labor across several US geographic markets. The base pay for this position ranges from $125,500/year in our lowest geographic market up to $212,800/year in our highest geographic market. Pay is based on a number of factors including market location and may vary depending on job-related knowledge, skills, and experience. Amazon is a total compensation company. Dependent on the position offered, equity, sign-on payments, and other forms of compensation may be provided as part of a total compensation package, in addition to a full range of medical, financial, and/or other benefits. For more information, please visit https://www.aboutamazon.com/workplace/employee-benefits. This position will remain posted until filled. Applicants should apply via our internal or external career site."
+"Applied Scientist, Creators",Amazon.com Services LLC,"New York, NY",https://www.indeed.com/rc/clk?jk=77e2cda64995e475&bb=61CN2pTWBE7fh6ZtDvGZtqXoHP-4RqOnGkYnMUys6bxqEHIvuk4Wgub0v3wev7CBDIVjspyGz7ns-cZx1tqLvIwoatMC5wsqpNZ-K7Iptuzzi24W_IOiQMQLroZVE1oB6Fb4fhfxtzRoNNdG1lMLyQ%3D%3D&xkcb=SoDm67M3uz6MOOxWHp0PbzkdCdPP&fccid=fe2d21eef233e94a&vjs=3,"DESCRIPTION
+Are you a passionate Applied Scientist (AS) ready to shape the future of digital content creation? At Amazon, we're building Earth's most desired destination for creators to monetize their unique skills, inspire the next generation of customers, and help brands expand their reach. We build innovative products and experiences that drive growth for creators across Amazon's ecosystem. Our team owns the entire Creator product suite, ensuring a cohesive experience, optimizing compensation structures, and launching features that help creators achieve both monetary and non-monetary goals.
+
+Key job responsibilities
+As an AS on our team, you will:
+Handle challenging problems that directly impact millions of creators and customers
+Independently collect and analyze data
+Develop and deliver scalable predictive models, using any necessary programming, machine learning, and statistical analysis software
+Collaborate with other scientists, engineers, product managers, and business teams to creatively solve problems, measure and estimate risks, and constructively critique peer research
+Consult with engineering teams to design data and modeling pipelines which successfully interface with new and existing software
+Participate in design and implementation across teams to contribute to initiatives and develop optimal solutions that benefit the creators organization
+
+The successful candidate is a self-starter, comfortable with a dynamic, fast-paced environment, and able to think big while paying careful attention to detail. You have deep knowledge of an area/multiple areas of science, with a track record of applying this knowledge to deliver science solutions in a business setting and a demonstrated ability to operate at scale. You excel in a culture of invention and collaboration.
+BASIC QUALIFICATIONS
+PhD, or Master's degree and 2+ years of CS, CE, ML or related field experience
+Experience programming in Java, C++, Python or related language
+2+ years of building models for business application experience
+2+ years of hands-on predictive modeling and large data analysis experience
+PREFERRED QUALIFICATIONS
+Experience in designing experiments and statistical analysis of results
+Experience in investigating, designing, prototyping, and delivering new and innovative system solutions
+
+Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.
+
+Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit https://amazon.jobs/content/en/how-we-hire/accommodations for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.
+
+Our compensation reflects the cost of labor across several US geographic markets. The base pay for this position ranges from $136,000/year in our lowest geographic market up to $223,400/year in our highest geographic market. Pay is based on a number of factors including market location and may vary depending on job-related knowledge, skills, and experience. Amazon is a total compensation company. Dependent on the position offered, equity, sign-on payments, and other forms of compensation may be provided as part of a total compensation package, in addition to a full range of medical, financial, and/or other benefits. For more information, please visit https://www.aboutamazon.com/workplace/employee-benefits. This position will remain posted until filled. Applicants should apply via our internal or external career site."
+Senior Data Scientist,Intuit,"New York, NY 10003 (Greenwich Village area)",https://www.indeed.com/rc/clk?jk=79810b9876e2db05&bb=61CN2pTWBE7fh6ZtDvGZtpV-DJs-h9E6Ox7ZBOr7CV5stuCxZiL02p16nUCy25-obvLvni2ceXv4pwmQPuxFxrmpLbizxUXdi--7dLjUZocGP5kqlBn7HoUks2bSvtiOrnFQI2udnSFLYcrTlJBmiw%3D%3D&xkcb=SoBS67M3uz6MOOxWHp0ObzkdCdPP&fccid=9784ae78e9834539&vjs=3,"Overview
+We are seeking a highly motivated and experienced Senior Data Scientist to join our Marketing Data Science Team. This critical role focuses on driving data-driven strategies that enhance customer engagement, retention, and loyalty across all stages of the lifecycle. If you possess a strong foundation in statistics, mathematics, programming, coupled with experimentation, ML modeling experience, and a proven ability to translate complex data into actionable insights for diverse stakeholders, this is your opportunity to make a profound impact. You'll work cross-functionally, applying advanced analytics to improve customer experiences and identify growth opportunities. If you're passionate about shaping the future of customer relationships through data, we'd love to hear from you.
+What you'll bring
+4+ years of experience working in web data science or product data science
+Advanced proficiency in SQL, “big data” technologies (e.g., BigQuery, Redshift), and BI tools (e.g., Tableau, Dash), and familiarity with vendor platforms a plus (e.g., Google Analytics GA4, Segment, Amplitude)
+Strong programming skills in Python; experience building ML models (GenAI models a plus), including automation and custom implementations
+Deep expertise in experimentation design (A/B/n) and causal inference (Propensity Score, DiD, Synthetic Control) with a strategic understanding of their application
+Understanding of AI-native architectures and GenAI platforms; able to assess implications for data, testing, and behavior
+Strong business acumen and the ability to translate business strategy into testable hypotheses and learning agendas
+Strong data storytelling skills, with a proven ability to rapidly construct impactful visualization, communicate insights and influence leadership
+Excellent communication and interpersonal skills, with a proven ability to build trust and collaborate seamlessly across technical, business, and cross-functional teams.
+Comfortable working in a fast-paced environment and have flexibility to shift priorities when needed
+Bachelor’s degree in Engineering, Data Science, Statistics, Mathematics, Computer Science, Economics or related quantitative field or equivalent work experience; Master’s Degree preferred
+How you will lead
+Experimentation and A/B Testing: Design, execute, and analyze A/B tests and other experiments using a hypothesis-driven approach. Provide insights and recommendations based on test outcomes to optimize business strategies.
+Predictive Analytics and Modeling: Develop predictive models and methodologies to uncover growth opportunities and support long-term business planning.
+Enable Self-Serve Analytics: Define and implement standardized metrics, reports, and dashboards. Work with Data Engineering to ensure data quality
+AI/GenAI Integration: Collaborate with AI teams to integrate AI/GenAI solutions into business processes, enhancing efficiency and innovation.
+Define KPIs and Success Metrics: Establish key business indicators for projects, ensuring alignment with company objectives and clear measures of success.
+Strategic Recommendations: Provide actionable recommendations using diverse data sets and business knowledge, even when complete data is unavailable, to support strategic decisions.
+Data Visualizations: Translate complex data into clear, accessible visualizations that help stakeholders understand key insights and make informed decisions.
+Cross-Functional Collaboration: Partner with product and sales teams to identify opportunities, create data-driven strategies, and influence decision-making.
+- Leadership and Ownership: Demonstrates boundaryless leadership and extreme accountability - proactively drives outcomes across teams and leads with influence, not authority.
+Stay Current with Industry Trends: Keep up with evolving trends and advancements in data analytics to drive innovation and continuously improve business processes.
+
+Intuit provides a competitive compensation package with a strong pay for performance rewards approach. The expected base pay range for this position is: New York $160,000.00 - 216,500.00This position will be eligible for a cash bonus, equity rewards and benefits, in accordance with our applicable plans and programs (see more about our compensation and benefits at Intuit®: Careers | Benefits).Pay offered is based on factors such as job-related knowledge, skills, experience, and work location. To drive ongoing pay equity for employees, Intuit conducts regular comparisons across categories of ethnicity and gender."
+"Scientist II, Rider Pricing & Incentives",Uber,"New York, NY",https://www.indeed.com/rc/clk?jk=c1f18c6cb554a8d6&bb=61CN2pTWBE7fh6ZtDvGZto6wPpL4YptnLFcOHMo0nufoVvZKY7Qq_7uEbAOYmTnyjgI-UmPHhGHaxgvgrlimdEL6mcp0Dlht5N7TOY7wYiLvs0gf1rOZZFCXu7hspS6jfEOfHI3PQkb4GlZePGTaUQ%3D%3D&xkcb=SoDP67M3uz6MOOxWHp0NbzkdCdPP&fccid=f766f8bfbc3effb7&vjs=3,"About the Role
+
+Scientists at Uber use data to analyze, improve and automate all aspects of Uber's core rideshare and delivery products. You will be joining the Rider Pricing and Incentives team, which owns our automated real-time pricing and incentives algorithms and platform. You will work on analyzing data that help design the models that maintain reliability and improve the efficiency of Uber's Mobility marketplace.
+
+We are looking for experienced candidates with a passion for analyzing data and solving new and difficult problems with data. In this role, you will be able to use your strong quantitative skills in the fields of economics, machine learning, and/or operations research to improve the Uber rider experience as well as the overall marketplace performance.
+
+What the Candidate Will Need / Bonus Points - What the Candidate Will Do -
+Use data to understand product performance and to identify improvement opportunities.
+Build statistical, optimization, and machine learning models for a range of applications in the pricing and incentives algorithms space.
+Design and execute product experiments and interpret the results to draw detailed and actionable conclusions.
+Present findings to senior management to inform business decisions.
+Collaborate with cross-functional teams across disciplines such as product, engineering, operations, and marketing to drive system development end-to-end from ideation to productionization
+- Basic Qualifications -
+Ph.D., M.S., or Bachelors degree in Statistics, Economics, Machine Learning, Operations Research, or other quantitative fields.
+2+ years of experience as an Applied or Data Scientist or equivalent (can be also as part of Ph.D training).
+Knowledge of underlying mathematical foundations of statistics, machine learning, optimization, economics, and analytics.
+Experience in experimental design and analysis.
+Experience with exploratory data analysis, statistical analysis and testing, and model development.
+Ability to use Python to work efficiently at scale with large data sets.
+Proficiency in SQL.
+- Preferred Qualifications -
+
+
+2+ years of industry experience.
+Experience in algorithm development and prototyping.
+Experience in pricing optimization.
+Experience with productionizing algorithms for real-time systems.
+Well-honed communication and presentation skills.
+
+
+
+
+For New York, NY-based roles: The base salary range for this role is USD$155,000 per year - USD$172,000 per year. For San Francisco, CA-based roles: The base salary range for this role is USD$155,000 per year - USD$172,000 per year. For Seattle, WA-based roles: The base salary range for this role is USD$155,000 per year - USD$172,000 per year. For Sunnyvale, CA-based roles: The base salary range for this role is USD$155,000 per year - USD$172,000 per year. For all US locations, you will be eligible to participate in Uber's bonus program, and may be offered an equity award & other types of comp. You will also be eligible for various benefits. More details can be found at the following link https://www.uber.com/careers/benefits."
+Senior Quantitative Engineer - Fixed Income - Artificial Intelligence,Bloomberg,"New York, NY",https://www.indeed.com/rc/clk?jk=808de5a97dc2d805&bb=61CN2pTWBE7fh6ZtDvGZtiG6RVDwrRAAiqICct9Zgf3zciaQ7l1jZX8j_IwhqAFwAcLkZIbRuHZT1R6u_KTV8-g0VTI1ewM2jOvAtyvTvWp_qKEDP65ZoI6HrWHhGlM1hnsO0jMnVPT1xazuwMLP2A%3D%3D&xkcb=SoB767M3uz6MOOxWHp0MbzkdCdPP&fccid=f770da67b3b51c62&vjs=3,"Bloomberg’s Engineering AI department has 350+ AI practitioners building highly sought after products and features that shape global markets. In our fast-paced fixed income domain, you’ll design and implement advanced models that leverages modern ML and statistical techniques on top of novel technology stacks and vast data sources to price accurately millions of securities. We are heavily invested in data-driven solutions that combine statistical and machine learning solutions to price diverse asset classes, with a strong focus on Fixed Income. Building on the success of modern ML-based pricing solutions such as IBVAL, we are expanding our group to tackle more ambitious challenges in fixed income modeling. In this role, you will contribute novel modeling ideas and bring them to life by writing clean, modular, production-quality code for cloud-native environments, ensuring your work makes a tangible impact.
+We seek highly multifaceted skilled individuals with expertise in Fixed Income modeling, interest rate theory, credit risk, or advanced statistical/machine learning techniques to join our team.
+
+You'll have the opportunity to:
+
+Develop, build and evaluate statistical and Machine Learning models that directly influence how global markets price fixed income assets.
+Collaborate with cross-functional teams to develop, test, monitor and maintain robust production systems.
+Design new architectures, systems and approaches to power the pricing capabilities of Bloomberg.
+Integrate cutting-edge academic and industry research into models and methodologies, staying ahead of emerging developments to drive continuous innovations.
+Represent Bloomberg at scientific and industry conferences, and publish research findings through documentation, whitepapers, or in leading academic journals and conferences.
+
+You'll need to have:
+
+3+ years of relevant work experience with Machine Learning or Statistical Modeling techniques in the financial industry ideally around asset valuation.
+Ph.D. or M.Sc. with equivalent research experience in Machine Learning, Computer Science, Mathematics, Statistics or a related field.
+Thriving in solving challenging, often ill-defined problems where off-the-shelf solutions fall short, and bring a creative, rigorous approach to developing novel methods and technologies.
+Proven track record designing, building, evaluating and maintaining statistical or Machine Learning solutions on Production.
+Proficiency in software engineering with an understanding of Computer Science fundamentals such as data structures and algorithms.
+Excellent communication skills and the ability to collaborate with engineering peers as well as non-engineering stakeholders.
+A track record of authoring publications in top conferences and journals is a strong plus
+
+Salary Range = 165000 - 260000 USD Annually + Benefits + Bonus
+
+The referenced salary range is based on the Company's good faith belief at the time of posting. Actual compensation may vary based on factors such as geographic location, work experience, market conditions, education/training and skill level.
+
+We offer one of the most comprehensive and generous benefits plans available and offer a range of total rewards that may include merit increases, incentive compensation (exempt roles only), paid holidays, paid time off, medical, dental, vision, short and long term disability benefits, 401(k) +match, life insurance, and various wellness programs, among others. The Company does not provide benefits directly to contingent workers/contractors and interns.
+
+ACCOMMODATIONS
+Bloomberg provides reasonable adjustment/accommodation to individuals with disabilities. Please tell us if you require a reasonable adjustment/accommodation to apply for a job. Examples of reasonable adjustment/accommodation include but are not limited to making a change to the application process or work procedures, providing documents in an alternate format or using specialized equipment. To request an adjustment/accommodation to apply for a job, please email AMER_recruit@bloomberg.net (Americas), EMEA_recruit@bloomberg.net (Europe, the Middle East and Africa), or APAC_recruit@bloomberg.net (Asia-Pacific), based on the region you are submitting an application for.
+EQUAL OPPORTUNITY
+Bloomberg is an equal opportunity employer and prohibits discrimination in employment. It is Bloomberg’s policy to provide equal opportunity and access for all persons, and the Company is committed to attracting, retaining, developing, and promoting the most qualified individuals without regard to age, ancestry, color, gender identity or expression, genetic predisposition or carrier status, marital status, national or ethnic origin, race, religion or belief, sex, sexual orientation, sexual and other reproductive health decisions, parental or caring status, physical or mental disability, pregnancy or maternity/parental leave, protected veteran status, status as a victim of domestic violence, or any other classification protected by applicable law (each, a “Protected Characteristic”). Bloomberg prohibits treating applicants or employees less favorably in connection with the terms and conditions of employment, in all phases of the employment process, because of one or more Protected Characteristics."
+Senior Quantitative Engineer - Fixed Income - Artificial Intelligence,Bloomberg,"New York, NY",https://www.indeed.com/viewjob?jk=789abcdef0123456,Description not found.
+"Senior Data Scientist, Amazon Advertising",Amazon.com Services LLC,"New York, NY",https://www.indeed.com/rc/clk?jk=aec46642f4153b5d&bb=61CN2pTWBE7fh6ZtDvGZtvvqdSSzlms_i1fv-ZxxXyNyCSk4vfc2sE40sVNjU8TUXINLGtrr8kNfZiZiPDl1aboyONugnxvAB3MP3gkX2BsJT4rwbaJP6q63TsTxfwXpYv82YSjxrsql1tdFdWPoCw%3D%3D&xkcb=SoCS67M3uz6MOOxWHp0DbzkdCdPP&fccid=fe2d21eef233e94a&vjs=3,Description not found.
+"Senior Data Scientist, AWS Professional Services","Amazon Web Services, Inc.","New York, NY",https://www.indeed.com/rc/clk?jk=54465ed2735d6e8a&bb=61CN2pTWBE7fh6ZtDvGZtsT4i-4QX8sFkhQRGkpd71btKxygxw7zwtfOn7zG1sOhN7jWUviPK1DxYhpzSyMsrJXVdOGw7Pc_EMPJqvV8G74lxQU6Gy8sWWW2OGHsLHgmeYvcErFox2n8vB8aZDZgiw%3D%3D&xkcb=SoAm67M3uz6MOOxWHp0CbzkdCdPP&fccid=5cc0cdc6dbb121cc&vjs=3,Description not found.
+"Applied Scientist, AWS Professional Services","Amazon Web Services, Inc.","New York, NY",https://www.indeed.com/rc/clk?jk=40e2daba4f7f41c8&bb=61CN2pTWBE7fh6ZtDvGZtrLFQzRZPu9BkL2nTho4q2hnkrjsoxuTxeN3EfIs63CsIV2fMmRSva6XM9XWQH0Ay_sMpOhzrFA1EcEOMOo6OHdb4Vg26q5Ekax9XmCcZXnYDKg9wI_JcKQVjDkaS4Fh6Q%3D%3D&xkcb=SoC767M3uz6MOOxWHp0BbzkdCdPP&fccid=5cc0cdc6dbb121cc&vjs=3,Description not found.
+"Senior Data Scientist, Media & Entertainment","Amazon Web Services, Inc.","New York, NY",https://www.indeed.com/rc/clk?jk=a1f9a8314b22b394&bb=61CN2pTWBE7fh6ZtDvGZtpGnyOpjEy5p5S2Uw4dLYCNgxtTprRAQxtjc-I3_TFSLtacfusRvuEsen3nfGvo98aXRWsTU7ht25s3d2ziFBr8mV6w4o3LSnmChJCdDN9mTV6XIX9hR147Pd8Z34bEnCw%3D%3D&xkcb=SoAP67M3uz6MOOxWHp0AbzkdCdPP&fccid=5cc0cdc6dbb121cc&vjs=3,Description not found.
+"Data Scientist, AWS Professional Services","Amazon Web Services, Inc.","New York, NY",https://www.indeed.com/rc/clk?jk=14f79edd98e012c7&bb=61CN2pTWBE7fh6ZtDvGZtvxW5h94u6R4l3INGIxWdI1_D5e2qVuX0QvzqE6hZuc7FIFlmHf_558kvoUqiyULeVXyMIREifCa1B3rJv4irsDKfkAUck_IUWQBjDc2emPTP2tjJOnYvWx68lbsdv7t4Q%3D%3D&xkcb=SoCB67M3uz6MOOxWHp0HbzkdCdPP&fccid=5cc0cdc6dbb121cc&vjs=3,Description not found.
+Senior AI Engineer,Tekcogno,"New York, NY 11226 (Flatbush area)",https://www.indeed.com/rc/clk?jk=cdb38f51af17abe1&bb=61CN2pTWBE7fh6ZtDvGZttzrO1COcyP1EO5Tkl6Xl9hnrYG5uvEquQLCnPXLrmLvD54En3UicFKr92driCqXRN8ioh34f554PN4jVXVUkbWXQdNKz2gu948b2OYpoTubp3GiQS_0WLVUCir8koM5IA%3D%3D&xkcb=SoA167M3uz6MOOxWHp0GbzkdCdPP&fccid=360f48ee217c77a6&cmp=Tekcogno&ti=Ai+Developer&vjs=3,Description not found.
+Assistant Vice President of Artificial Intelligence,NYC Health + Hospitals,"New York, NY",https://www.indeed.com/rc/clk?jk=ac50741b5b0968f4&bb=61CN2pTWBE7fh6ZtDvGZtj0szaac0gFIPrfgme1qhDL5UnYeNlfqzco4wb3DEpnxmXbfclu2YOuooEsc6m6SMBgI4Wh2hDSXuNoS_aqGUGt1GH4dV1_YsgKUbHMbB7L2Fe1IZeC5I8hNH_A5sw8dgA%3D%3D&xkcb=SoCo67M3uz6MOOxWHp0FbzkdCdPP&fccid=8ba13cf21fd7c2de&vjs=3,Description not found.
+"Senior Software Engineer, Machine Learning",Google,"New York, NY (Chelsea area)",https://www.indeed.com/rc/clk?jk=8def58f51dbdab5d&bb=61CN2pTWBE7fh6ZtDvGZti28asf6e61-7BGk-bwkK4fIHK8-RxYg3BB1OUdfy-iiAgB5hme0MDK-clkHbNYrJMnuhRdoFkGOpTsNwML-qlLTOAE_q5Wb3w8sYJP1gCLaWDs7vLunWHIk_aJdEy0Gxw%3D%3D&xkcb=SoAc67M3uz6MOOxWHp0EbzkdCdPP&fccid=a5b4499d9e91a5c6&vjs=3,Description not found.
+Software Engineer - ML Data,Apple,"New York, NY 10007 (Lower East Side area)",https://www.indeed.com/rc/clk?jk=fe555ffa1234e0fb&bb=61CN2pTWBE7fh6ZtDvGZtqUAtooCNHQoVH4W1PYDiM_XNSjdvBFLKtBR5BwcDBjkvDbCVrMNrkS9GWIXIc0OxQ85CeOuBcSM9SaZy7e1bVo5hgjGbR5tkJ810OLoF8Wi5yLzD4YWnk3VYrE4rfZbYg%3D%3D&xkcb=SoA767M3uz6MOOxWHp0bbzkdCdPP&fccid=c1099851e9794854&vjs=3,Description not found.
