@@ -1,0 +1,12 @@
+# --- For the Scraper ---
+requests
+beautifulsoup4
+lxml
+selenium
+webdriver-manager
+selenium-stealth
+
+# --- For Data Processing & Dashboard ---
+pandas
+streamlit
+plotly
