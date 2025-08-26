@@ -1,79 +1,117 @@
 import pandas as pd
 import re
 from collections import Counter
+import logging
+
+# Set up logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 SKILLS_LIST = [
-    'python', 'r', 'sql', 'java', 'c\+\+', 'scala', 'julia',  # Escape special chars
+    'python', 'r', 'sql', 'java', 'c\+\+', 'scala', 'julia',
     'pandas', 'numpy', 'scipy', 'matplotlib', 'seaborn', 'plotly',
     'scikit-learn', 'sklearn', 'tensorflow', 'keras', 'pytorch', 'torch',
-    'spark', 'pyspark', 'hadoop', 'mapreduce',
-    'aws', 'azure', 'gcp', 'google cloud',
-    'docker', 'kubernetes',
-    'git', 'github',
-    'tableau', 'power bi', 'powerbi', 'looker',
+    'spark', 'pyspark', 'hadoop', 'mapreduce', 'hive',
+    'aws', 'azure', 'gcp', 'google cloud', 's3', 'ec2', 'lambda',
+    'docker', 'kubernetes', 'container',
+    'git', 'github', 'gitlab',
+    'tableau', 'power bi', 'powerbi', 'looker', 'superset',
     'excel', 'statistics', 'machine learning', 'deep learning',
-    'nlp', 'natural language processing', 'computer vision',
-    'etl', 'data warehousing', 'data modeling', 'data mining'
+    'nlp', 'natural language processing', 'computer vision', 'cv',
+    'etl', 'data warehousing', 'data modeling', 'data mining',
+    'regression', 'classification', 'clustering', 'neural network', 'cnn', 'rnn',
+    'big data', 'distributed system', 'api', 'rest', 'json', 'xml'
 ]
 
-# Create a mapping for skill normalization
 SKILL_MAPPING = {
     'sklearn': 'scikit-learn',
     'torch': 'pytorch',
     'powerbi': 'power bi',
     'google cloud': 'gcp',
-    'natural language processing': 'nlp'
+    'natural language processing': 'nlp',
+    'computer vision': 'cv',
+    'deep learning': 'machine learning',
+    'neural network': 'machine learning'
 }
 
 def extract_skills(description):
     """Extracts predefined skills from a job description string."""
-    if not isinstance(description, str):
+    if not isinstance(description, str) or description in ['N/A', 'Description not found.', 'Error loading description']:
         return []
     
     found_skills = set()
     description_lower = description.lower()
     
     for skill in SKILLS_LIST:
-        # Use regex to find whole words
-        pattern = r'\b' + skill + r'\b'
+        pattern = r'\b' + re.escape(skill) + r'\b'
         if re.search(pattern, description_lower):
-            # Normalize skill names
             normalized_skill = SKILL_MAPPING.get(skill, skill)
             found_skills.add(normalized_skill)
                 
     return sorted(list(found_skills))
 
+def clean_data(df):
+    """Clean and preprocess the job data."""
+    # Remove rows with missing critical data
+    df = df.dropna(subset=['title', 'company', 'description'])
+    
+    # Remove rows with placeholder descriptions
+    invalid_descriptions = ['N/A', 'Description not found.', 'Error loading description']
+    df = df[~df['description'].isin(invalid_descriptions)]
+    
+    # Clean text fields
+    text_columns = ['title', 'company', 'location', 'description']
+    for col in text_columns:
+        if col in df.columns:
+            df[col] = df[col].astype(str).str.strip()
+    
+    return df
+
 def main():
     """Loads raw data, processes it, and saves the cleaned data."""
     try:
         df = pd.read_csv('raw_job_data.csv')
-        print(f"Successfully loaded raw_job_data.csv with {len(df)} records")
+        logging.info(f"Successfully loaded raw data with {len(df)} records")
     except FileNotFoundError:
-        print("Error: raw_job_data.csv not found. Please run scraper.py first.")
+        logging.error("raw_job_data.csv not found. Please run scraper.py first.")
         return
 
-    print("Processing data and extracting skills...")
-    
-    # Clean data
-    df = df.dropna(subset=['description'])
-    df = df[df['description'] != 'Description not found.']
-    df = df[df['description'] != 'N/A']
-    df = df[df['description'] != 'Error loading description']
+    # Clean the data
+    logging.info("Cleaning data...")
+    df_clean = clean_data(df)
+    logging.info(f"After cleaning: {len(df_clean)} records remaining")
     
     # Extract skills
-    df['skills'] = df['description'].apply(extract_skills)
+    logging.info("Extracting skills from descriptions...")
+    df_clean['skills'] = df_clean['description'].apply(extract_skills)
     
-    # Calculate skill frequencies for reporting
-    all_skills = [skill for sublist in df['skills'] for skill in sublist]
+    # Calculate skill statistics
+    all_skills = [skill for sublist in df_clean['skills'] for skill in sublist]
     skill_counts = Counter(all_skills)
     
-    print(f"Processed {len(df)} job listings")
-    print("Top 10 skills found:")
+    logging.info("Top 10 skills found:")
     for skill, count in skill_counts.most_common(10):
-        print(f"  {skill}: {count}")
-
-    df.to_csv('processed_job_data.csv', index=False)
-    print("\nSuccessfully saved processed data to processed_job_data.csv")
+        logging.info(f"  {skill}: {count}")
+    
+    # Add skill count column
+    df_clean['skill_count'] = df_clean['skills'].apply(len)
+    
+    # Save processed data
+    output_file = 'processed_job_data.csv'
+    df_clean.to_csv(output_file, index=False)
+    logging.info(f"Processed data saved to {output_file}")
+    
+    # Generate summary report
+    summary = {
+        'total_jobs': len(df),
+        'cleaned_jobs': len(df_clean),
+        'unique_companies': df_clean['company'].nunique(),
+        'unique_skills': len(skill_counts),
+        'avg_skills_per_job': df_clean['skill_count'].mean(),
+        'top_skills': dict(skill_counts.most_common(5))
+    }
+    
+    logging.info("Processing complete!")
+    logging.info(f"Summary: {summary}")
 
 if __name__ == "__main__":
     main()

@@ -1,62 +1,108 @@
 name: Daily Data Scrape and Process
 
 on:
-  workflow_dispatch: # Allows manual triggering
+  workflow_dispatch:
   schedule:
-    - cron: '0 8 * * 1-5' # Runs at 8 AM UTC on weekdays
+    - cron: '0 8 * * 1-5'  # 8 AM UTC on weekdays
 
 jobs:
   scrape-and-process:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v4
 
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
 
-      - name: Install Python dependencies
-        run: pip install -r requirements.txt
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y wget gnupg2
+        wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+        echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable
 
-      - name: Install Google Chrome Stable
-        run: |
-          wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
-          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-          sudo apt-get update
-          sudo apt-get install -y google-chrome-stable
+    - name: Verify Chrome installation
+      run: |
+        google-chrome --version
+        which google-chrome
 
-      - name: Modify scraper.py to run headless for automation
-        run: |
-          # This command inserts the --headless argument needed for the server environment
-          sed -i '/options.add_argument("start-maximized")/a \    options.add_argument("--headless")' scraper.py
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
 
-      - name: Run Scraper and Processor
-        id: run_scripts # Give this step an ID to check its outcome
-        run: |
-          python scraper.py
-          python data_processor.py
+    - name: Run Scraper
+      env:
+        GITHUB_ACTIONS: 'true'
+      run: |
+        echo "Running scraper in headless mode..."
+        timeout 1200 python scraper.py  # 20 minute timeout
+        echo "Scraper completed"
 
-      - name: Commit and push data files
-        # This step will only run if the previous step was successful
-        # AND if the CSV files were actually created.
-        run: |
-          git config --global user.name "GitHub Actions Bot"
-          git config --global user.email "github-actions-bot@github.com"
-          # Check if the output file exists before trying to add it
-          if [ -f "processed_job_data.csv" ]; then
-            git add raw_job_data.csv processed_job_data.csv
-            # Commit only if there are changes
-            if git diff --staged --quiet; then
-              echo "No changes in data to commit."
-            else
-              git commit -m "Update: Daily job data refresh"
-              git push
-            fi
-          else
-            echo "processed_job_data.csv not found. Skipping commit. Scraper likely failed."
-            # We will now explicitly fail the workflow to make the error clear
-            exit 1
-          fi
+    - name: Check if raw data was created
+      id: check_raw_data
+      run: |
+        if [ -f "raw_job_data.csv" ]; then
+          echo "raw_data_exists=true" >> $GITHUB_OUTPUT
+          echo "✅ Raw data file found"
+          ls -la raw_job_data.csv
+        else
+          echo "raw_data_exists=false" >> $GITHUB_OUTPUT
+          echo "❌ Raw data file not found"
+          ls -la
+          exit 1
+        fi
+
+    - name: Run Data Processor
+      if: steps.check_raw_data.outputs.raw_data_exists == 'true'
+      run: |
+        python data_processor.py
+        echo "Data processing completed"
+
+    - name: Check if processed data was created
+      id: check_processed_data
+      run: |
+        if [ -f "processed_job_data.csv" ]; then
+          echo "processed_data_exists=true" >> $GITHUB_OUTPUT
+          echo "✅ Processed data file found"
+          # Show basic info about the processed data
+          wc -l processed_job_data.csv
+        else
+          echo "processed_data_exists=false" >> $GITHUB_OUTPUT
+          echo "❌ Processed data file not found"
+          exit 1
+        fi
+
+    - name: Commit and push data files
+      if: steps.check_processed_data.outputs.processed_data_exists == 'true'
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        
+        # Check if there are changes to commit
+        git add raw_job_data.csv processed_job_data.csv
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "🤖 Automated data update: $(date +'%Y-%m-%d %H:%M')"
+          git push
+          echo "✅ Data files committed and pushed"
+        fi
+
+    - name: Upload log files as artifacts
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: scraper-logs
+        path: |
+          scraper.log
+          raw_job_data.csv
+          processed_job_data.csv
+        retention-days: 7

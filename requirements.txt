@@ -1,12 +1,19 @@
-# --- For the Scraper ---
-requests
-beautifulsoup4
-lxml
-selenium
-webdriver-manager
-selenium-stealth
+# Web Scraping
+selenium==4.15.2
+webdriver-manager==4.0.0
+selenium-stealth==1.0.6
+beautifulsoup4==4.12.2
+lxml==4.9.3
+requests==2.31.0
 
-# --- For Data Processing & Dashboard ---
-pandas
-streamlit
-plotly
+# Data Processing & Analysis
+pandas==2.0.3
+numpy==1.24.3
+
+# Dashboard & Visualization
+streamlit==1.28.1
+plotly==5.17.0
+
+# Utilities
+tqdm==4.66.1
+python-dotenv==1.0.0

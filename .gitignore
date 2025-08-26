@@ -206,6 +206,17 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# # Ignore generated data and debug files
+# Ignore generated data and debug files
+# But keep our job data files - comment out or remove the *.csv line
 # *.csv
-# *.html
+
+# Instead, be more specific about which CSV files to ignore
+debug_*.csv
+test_*.csv
+temp_*.csv
+
+# HTML files (except our dashboard if needed)
+*.html
+
+# Keep our job data files by not ignoring all CSV files
+# raw_job_data.csv and processed_job_data.csv should be tracked
